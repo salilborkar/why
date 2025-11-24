@@ -87,7 +87,7 @@ class CuriousToddlerAgent:
     def listen(self):
         """Listening for user input."""
         print(f"\n{Fore.GREEN}Toddler Bot is listening... (Type 'exit' to quit)")
-        print(f"{Fore.CYAN}User: ", end="")
+        print(f"{Fore.CYAN}Toddler: ", end="")
         return input().strip()
 
     def run(self):
