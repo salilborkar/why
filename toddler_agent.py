@@ -13,7 +13,10 @@ class ToddlerBrain:
         Initializes the Brain (Gemini).
         """
         # Try to get key from argument or environment variable
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+        #self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+        
+        # --- PASTE YOUR KEY BELOW IF YOU WANT TO HARDCODE IT ---
+        self.api_key = "AIzaSyBMBxwX8QoTFCKgJoO6ueeZQhLiDMLtQG0" 
         
         if not self.api_key:
             print(f"{Fore.RED}Error: Gemini API Key is missing.")
@@ -27,7 +30,8 @@ class ToddlerBrain:
         """
         Takes a question and context, and generates a simple explanation.
         """
-        print(f"{Fore.DIM}* Brain is thinking about how to explain this... *")
+        # FIX: Changed Fore.DIM to Style.DIM
+        print(f"{Style.DIM}* Brain is thinking about how to explain this... *")
 
         system_instruction = (
             "You are a gentle, wise, and enthusiastic teacher talking to a 3-year-old toddler. "
@@ -57,7 +61,8 @@ class ToddlerHands:
         """
         Uses 'hands' to go out and fetch information from the internet.
         """
-        print(f"{Fore.DIM}* Hands are looking up '{query}' on the internet... *")
+        # FIX: Changed Fore.DIM to Style.DIM
+        print(f"{Style.DIM}* Hands are looking up '{query}' on the internet... *")
         
         try:
             # simple search for text results
@@ -87,7 +92,7 @@ class CuriousToddlerAgent:
 
     def run(self):
         """Main interaction loop connecting Brain and Hands."""
-        print(f"{Fore.YELLOW}=== Curious Toddler Bot (Single File Edition) Started ===")
+        print(f"{Fore.YELLOW}=== Curious Toddler Bot (Fixed Edition) Started ===")
         print("Ask me a 'why' question! (e.g., 'Why is the sky blue?')")
 
         while True:
