@@ -24,13 +24,12 @@ class ToddlerBrain:
             sys.exit(1)
             
         genai.configure(api_key=self.api_key)
-        self.model = genai.GenerativeModel('gemini-1.5-flash')
+        self.model = genai.GenerativeModel('gemini-2.5-flash')
 
     def think_and_simplify(self, question, context):
         """
         Takes a question and context, and generates a simple explanation.
         """
-        # FIX: Changed Fore.DIM to Style.DIM
         print(f"{Style.DIM}* Brain is thinking about how to explain this... *")
 
         system_instruction = (
