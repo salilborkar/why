@@ -13,10 +13,10 @@ class ToddlerBrain:
         Initializes the Brain (Gemini).
         """
         # Try to get key from argument or environment variable
-        #self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
         
         # --- PASTE YOUR KEY BELOW IF YOU WANT TO HARDCODE IT ---
-        self.api_key = "AIzaSyBMBxwX8QoTFCKgJoO6ueeZQhLiDMLtQG0" 
+        #self.api_key = "" 
         
         if not self.api_key:
             print(f"{Fore.RED}Error: Gemini API Key is missing.")
