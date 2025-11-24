@@ -1,2 +1,2 @@
-# why
-answers to the "why" questions asked by my toddler 
+# why?
+an AI agent that answers the zillion "why" questions my toddler keeps asking, quenching her curiosity
