@@ -37,7 +37,7 @@ class ToddlerBrain:
         }
 
         self.model = genai.GenerativeModel(
-            'gemini-1.5-flash',
+            'gemini-2.5-flash',
             safety_settings=self.safety_settings
         )
 
